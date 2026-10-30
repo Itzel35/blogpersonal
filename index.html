@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="teal darken-2">
+        <div class="nav-wrapper container">
+            <a href="#inicio" class="brand-logo">Mi Blog</a>
+            <a href="#" data-target="menu-movil" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#publicaciones">Publicaciones</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SIDENAV (Móvil) -->
+    <ul class="sidenav" id="menu-movil">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#publicaciones">Publicaciones</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <section id="inicio" class="hero teal lighten-5">
+        <div class="container center-align">
+            <img src="Yo.jpeg" alt="Avatar del autor" class="circle z-depth-2" style="width: 120px !important; height: 120px !important; object-fit: cover; border: 4px solid white; margin-bottom: 15px;">
+            <h3>Hola, soy Itzel</h3>
+            <p class="flow-text">Apasionada por la tecnología, el desarrollo web y el diseño.</p>
+            <a href="#publicaciones" class="btn teal darken-2 waves-effect waves-light">Ver Publicaciones</a>
+        </div>
+    </section>
+
+    <section id="publicaciones" class="container section scrollspy">
+        <h4 class="center-align">Mis Publicaciones</h4>
+        
+        <div class="row" id="lista-articulos" style="display: flex; flex-wrap: wrap;"></div>
+    </section>
+
+    <section id="sobre-mi" class="container section scrollspy">
+        <div class="card-panel hoverable">
+            <h4>Sobre mí</h4>
+            <p>Me encanta aprender nuevas tecnologías y compartir mis proyectos. Actualmente estudio Ing. Software y busco mejorar mis habilidades creando interfaces atractivas y funcionales.</p>
+            
+            <h5>Habilidades:</h5>
+            <div class="chip"><i class="material-icons tiny">code</i> HTML5</div>
+            <div class="chip"><i class="material-icons tiny">palette</i> CSS3</div>
+            <div class="chip"><i class="material-icons tiny">flash_on</i> JavaScript</div>
+            <div class="chip"><i class="material-icons tiny">devices</i> Materialize</div>
+
+            <h5 class="mt-4">Objetivos:</h5>
+            <ul class="browser-default">
+                <li>Dominar frameworks CSS como Materialize y Bootstrap.</li>
+                <li>Crear aplicaciones web responsivas.</li>
+                <li>Publicar mi portafolio profesional.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contacto" class="container section scrollspy">
+        <h4 class="center-align">Contacto</h4>
+        <div class="row">
+            <form id="formulario" class="col s12 m8 offset-m2 card-panel">
+                <div class="input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input id="nombre" type="text" required>
+                    <label for="nombre">Nombre completo</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input id="correo" type="email" required>
+                    <label for="correo">Correo electrónico</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea id="mensaje" class="materialize-textarea" required></textarea>
+                    <label for="mensaje">Mensaje</label>
+                </div>
+                <div class="center-align">
+                    <button class="btn teal darken-2 waves-effect waves-light" type="submit">
+                        Enviar <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="page-footer teal darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Mi Blog Personal</h5>
+                    <p class="grey-text text-lighten-4">Compartiendo ideas, experiencias y proyectos de desarrollo.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Enlaces</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/" target="_blank">GitHub</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+                        <li><a class="grey-text text-lighten-3" href="mailto:correo@ejemplo.com">Correo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            © 2026 Todos los derechos reservados - Itzel
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

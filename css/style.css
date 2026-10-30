@@ -1,0 +1,59 @@
+.bg-morado {
+    background-color: #9c27b0 !important; 
+}
+
+.bg-morado-claro {
+    background-color: #f3e5f5 !important; 
+}
+
+
+.hero {
+    padding: 60px 0 40px 0;
+    border-bottom: 3px solid #ae00ff; 
+}
+
+.card-action a {
+    color: #9c27b0 !important; 
+    font-weight: bold;
+}
+
+.chip {
+    background-color: #e1bee7 !important; 
+    color: #4a148c !important;
+    font-weight: 600;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(156, 39, 176, 0.3); 
+}
+
+.card-image img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.card-content small {
+    color: #777;
+    font-weight: 500;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
